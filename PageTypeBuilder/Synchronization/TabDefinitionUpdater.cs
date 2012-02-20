@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using EPiServer.DataAbstraction;
 using PageTypeBuilder.Abstractions;
+using ITabDefinitionRepository = PageTypeBuilder.Abstractions.ITabDefinitionRepository; 
 
 namespace PageTypeBuilder.Synchronization
 {

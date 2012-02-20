@@ -6,6 +6,7 @@ using EPiServer.DataAbstraction;
 using log4net;
 using PageTypeBuilder.Abstractions;
 using PageTypeBuilder.Discovery;
+using ITabDefinitionRepository = PageTypeBuilder.Abstractions.ITabDefinitionRepository;
 
 namespace PageTypeBuilder.Synchronization.PageDefinitionSynchronization
 {
