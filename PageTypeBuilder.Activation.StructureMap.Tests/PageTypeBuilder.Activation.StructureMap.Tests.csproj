@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PageTypeBuilder.Activation.StructureMap.Tests</RootNamespace>
     <AssemblyName>PageTypeBuilder.Activation.StructureMap.Tests</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -31,6 +31,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,13 +53,14 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EPiServer, Version=6.0.530.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+    <Reference Include="EPiServer">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>c:\Program Files (x86)\EPiServer\CMS\6.0.530.0\bin\EPiServer.dll</HintPath>
     </Reference>
-    <Reference Include="EPiServer.BaseLibrary, Version=6.0.530.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
+    <Reference Include="EPiServer.BaseLibrary">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>c:\Program Files (x86)\EPiServer\CMS\6.0.530.0\bin\EPiServer.BaseLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="EPiServer.Data">
+      <HintPath>C:\Program Files (x86)\EPiServer\Framework\7.0.603.2\bin\EPiServer.Data.dll</HintPath>
     </Reference>
     <Reference Include="Moq, Version=4.0.812.4, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
