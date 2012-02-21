@@ -10,7 +10,7 @@ namespace PageTypeBuilder.Abstractions
         PageType wrapped;
         public WrappedPageType(PageType pageTypeToWrap)
         {
-            wrapped = pageTypeToWrap;
+            wrapped = pageTypeToWrap.CreateWritableClone();
         }
 
         public int[] AllowedPageTypes
