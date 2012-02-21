@@ -11,6 +11,7 @@ using PageTypeBuilder.Tests.Helpers;
 using Rhino.Mocks;
 using Xunit;
 using Xunit.Extensions;
+using PageTypeRepository = PageTypeBuilder.Abstractions.PageTypeRepository;
 
 namespace PageTypeBuilder.Tests.Synchronization.PageTypeUpdaterTests
 {

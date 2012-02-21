@@ -7,6 +7,7 @@ using PageTypeBuilder.Synchronization;
 using PageTypeBuilder.Synchronization.PageDefinitionSynchronization;
 using Xunit;
 using Xunit.Extensions;
+using ITabDefinitionRepository = PageTypeBuilder.Abstractions.ITabDefinitionRepository;
 
 namespace PageTypeBuilder.Tests.Synchronization.pageDefinitionUpdaterTests
 {

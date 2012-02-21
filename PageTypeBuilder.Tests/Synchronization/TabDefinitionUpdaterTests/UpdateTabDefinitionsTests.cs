@@ -5,6 +5,7 @@ using Rhino.Mocks;
 using Xunit;
 using PageTypeBuilder.Abstractions;
 using PageTypeBuilder.Synchronization;
+using TabDefinitionRepository = PageTypeBuilder.Abstractions.TabDefinitionRepository;
 
 namespace PageTypeBuilder.Tests.Synchronization.TabDefinitionUpdaterTests
 {
