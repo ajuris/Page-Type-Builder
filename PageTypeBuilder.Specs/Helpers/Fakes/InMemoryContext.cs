@@ -10,6 +10,7 @@ using PageTypeBuilder.Reflection;
 using PageTypeBuilder.Specs.Helpers.TypeBuildingDsl;
 using PageTypeBuilder.Synchronization;
 using StructureMap;
+using ITabDefinitionRepository = PageTypeBuilder.Abstractions.ITabDefinitionRepository;
 
 namespace PageTypeBuilder.Specs.Helpers.Fakes
 {
