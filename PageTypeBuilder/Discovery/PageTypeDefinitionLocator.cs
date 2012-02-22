@@ -19,6 +19,7 @@ namespace PageTypeBuilder.Discovery
                 .AssembliesWithReferenceToAssemblyOf<PageTypeAttribute>()
                 .TypesWithAttribute<PageTypeAttribute>()
                 .Concrete()
+                .Where(t => !t.FullName.StartsWith("Castle.Proxies"))
                 .Select(type => new PageTypeDefinition
                     {
                         Type = type,

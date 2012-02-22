@@ -60,7 +60,7 @@
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="EPiServer.Data">
-      <HintPath>C:\Program Files (x86)\EPiServer\Framework\7.0.603.2\bin\EPiServer.Data.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="Moq, Version=4.0.812.4, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
