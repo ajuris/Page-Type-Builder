@@ -125,6 +125,7 @@
     </Compile>
     <Compile Include="Abstractions\WrappedPageType.cs" />
     <Compile Include="DefaultBootstrapper.cs" />
+    <Compile Include="Discovery\ContentModelFilter.cs" />
     <Compile Include="Discovery\GlobalPropertySettingsLocator.cs" />
     <Compile Include="Discovery\GlobalPropertySettingsUpdater.cs" />
     <Compile Include="Discovery\IGlobalPropertySettingsLocator.cs" />
