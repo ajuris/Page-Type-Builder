@@ -1,5 +1,7 @@
-﻿using Autofac;
+﻿using System.Linq;
+using Autofac;
 using EPiServer;
+using EPiServer.Core;
 using EPiServer.Core.PropertySettings;
 using EPiServer.Framework;
 using EPiServer.Framework.Initialization;
@@ -53,9 +55,13 @@ namespace PageTypeBuilder
 
         static void DataFactory_LoadedChildren(object sender, ChildrenEventArgs e)
         {
-            for (int i = 0; i < e.Children.Count; i++)
+            for (int i = 0; i < e.ChildrenItems.Count; i++)
             {
-                e.Children[i] = PageTypeResolver.Instance.ConvertToTyped(e.Children[i]);
+                var page = e.ChildrenItems[i] as PageData;
+                if (page != null)
+                {
+                    e.ChildrenItems[i] = PageTypeResolver.Instance.ConvertToTyped(page);
+                }
             }
         }
 
